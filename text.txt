@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ayushi ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #ffe0ec, #fff0f5, #f8d9ff);
+  color: #8c2858;
+  text-align: center;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+section {
+  padding: 45px 18px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #d63384;
+  font-size: clamp(32px, 8vw, 48px);
+  margin: 18px 0;
+}
+
+h2 {
+  color: #c02d77;
+  margin-bottom: 22px;
+  font-size: 27px;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.cake {
+  font-size: 90px;
+  margin: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-12px); }
+}
+
+button {
+  border: none;
+  background: #e75480;
+  color: white;
+  padding: 15px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 18px 5px;
+  box-shadow: 0 5px 15px #e7548060;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+.card {
+  background: #ffffffd9;
+  padding: 28px 20px;
+  border-radius: 24px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 8px 30px #d6338420;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid white;
+  background: #f8d9e8;
+}
+
+.letter {
+  white-space: pre-line;
+  text-align: center;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: float 6s linear forwards;
+  z-index: 10;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  padding: 35px 15px;
+  color: #c02d77;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+
+<section class="hero" id="home">
+
+  <div style="font-size:55px">💗 🌹 💗</div>
+
+  <p>A Little Surprise For Someone Special</p>
+
+  <h1>Happy Birthday!</h1>
+
+  <h2>Ayushi (Jaanu ❤️)</h2>
+
+  <div class="cake">🎂</div>
+
+  <p>
+    Today is not just your birthday.<br>
+    Today is a celebration of someone<br>
+    who makes life more beautiful.
+  </p>
+
+  <button onclick="startSurprise()">
+    Open Your Birthday Surprise 💌
+  </button>
+
+  <p style="font-size:13px;margin-top:15px">
+    Made with love by Vishal Sharma ❤️
+  </p>
+
+</section>
+
+
+<!-- BIRTHDAY MESSAGE -->
+
+<section id="birthday" class="hidden">
+
+  <div class="card">
+
+    <h1>Happy Birthday Jaanu! ❤️</h1>
+
+    <div class="cake">🎂💐🎁</div>
+
+    <p>
+      My Dearest Ayushi,<br><br>
+
+      I wish I could explain how special you are
+      to me, but sometimes even words cannot
+      express everything the heart feels.<br><br>
+
+      Your smile makes ordinary days beautiful.
+      Your happiness brings joy, and your presence
+      makes little moments unforgettable.<br><br>
+
+      On your special day, I wish you endless
+      happiness, success, good health and
+      everything your heart dreams of.<br><br>
+
+      May your smile always shine and may life
+      surprise you with beautiful moments.<br><br>
+
+      You deserve all the happiness in this world.<br><br>
+
+      I LOVE YOU SO MUCH! ❤️
+    </p>
+
+    <h2 style="margin-top:20px">
+      Forever sending you love 💗
+    </h2>
+
+  </div>
+
+</section>
+
+
+<!-- PHOTO GALLERY -->
+
+<section id="photos" class="hidden">
+
+  <h1>Our Beautiful Memories 📸</h1>
+
+  <p>Some moments deserve to stay forever. ❤️</p>
+
+  <div class="gallery">
+
+    <img src="photo1.jpg" alt="Our memory 1">
+
+    <img src="photo2.jpg" alt="Our memory 2">
+
+    <img src="photo3.jpg" alt="Our memory 3">
+
+    <img src="photo4.jpg" alt="Our memory 4">
+
+  </div>
+
+  <p style="margin-top:20px">
+    Every memory is special in its own way. 💕
+  </p>
+
+</section>
+
+
+<!-- LOVE LETTER -->
+
+<section id="loveletter" class="hidden">
+
+  <div class="card">
+
+    <h1>A Letter From My Heart 💌</h1>
+
+    <p class="letter">
+
+My Beautiful Ayushi, ❤️
+
+I have so many things to tell you,
+but I hope this little letter expresses
+even a small part of what you mean to me.
+
+You are someone I genuinely want to see
+happy, successful and smiling.
+
+I may not always have the perfect words,
+but I hope my actions always remind you
+that you are appreciated and valued.
+
+I wish I could give you the whole world,
+but for now, I wish you a lifetime full
+of beautiful memories, peaceful days
+and countless reasons to smile.
+
+Thank you for being YOU.
+
+If I could give you one birthday gift,
+it would be the ability to see yourself
+through my eyes, just once,
+so you could understand how special you are.
+
+Happy Birthday, my Jaanu! 🥹❤️
+
+With all my love,
+
+Vishal Sharma 💗
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- FINAL SURPRISE -->
+
+<section id="final" class="hidden">
+
+  <div class="card">
+
+    <div style="font-size:65px">❤️</div>
+
+    <h1>One Last Thing...</h1>
+
+    <p>
+      Ayushi, you are my favourite notification,
+      my favourite thought and one of
+      my favourite reasons to smile. 🥹
+      <br><br>
+
+      May this new year of your life be
+      as beautiful as your heart.
+      <br><br>
+
+      Happiest Birthday, Jaanu! 👑
+    </p>
+
+    <h2 style="margin-top:25px">
+      Lots of Love,<br>
+      Vishal Sharma ❤️
+    </h2>
+
+    <div style="font-size:35px">💗 🌹 💗</div>
+
+  </div>
+
+</section>
+
+
+<footer>
+  Made with endless love ❤️<br>
+  A little birthday world created just for Ayushi.
+</footer>
+
+
+<script>
+
+function startSurprise() {
+
+  document.getElementById("birthday").classList.remove("hidden");
+  document.getElementById("photos").classList.remove("hidden");
+  document.getElementById("loveletter").classList.remove("hidden");
+  document.getElementById("final").classList.remove("hidden");
+
+  document.querySelector(".hero button").textContent =
+    "Your Surprise Is Opened ❤️";
+
+  document.querySelector(".hero button").disabled = true;
+
+  document.getElementById("birthday").scrollIntoView({
+    behavior: "smooth"
+  });
+
+  hearts();
+}
+
+function hearts() {
+
+  const symbols = ["❤️", "💗", "💕", "💖", "🌸"];
+
+  function addHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.textContent =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (18 + Math.random() * 22) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+  }
+
+  for (let i = 0; i < 15; i++) {
+    setTimeout(addHeart, i * 150);
+  }
+
+  setInterval(addHeart, 500);
+}
+
+</script>
+
+</body>
+</html>
